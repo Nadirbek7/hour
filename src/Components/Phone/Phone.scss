@@ -1,0 +1,205 @@
+.phone{
+    height: 180vh;
+    background-color: #131313;
+
+
+
+    &__color{
+        height: 600px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+
+
+        &__strap{
+            color: white;
+            width: 1000px;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            &__mimi{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                &__fd{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+
+
+                    width: 65px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: linear-gradient(145deg, #111111, #191919);
+                    box-shadow:  8px 8px 20px #000000,
+                    -8px -8px 20px #222222;
+
+                    & > svg{
+                        font-size: 50px;
+                        color: rgb(42, 42, 181);
+                    }
+                }
+                
+
+            }
+
+        }
+    }
+
+
+   
+
+    &__hour{
+
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        &__lan{
+            width: 1500px;
+            height: 1000px;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            &__bar{
+                --bg: white;
+                --display: 1s;
+                background: var(--bg);
+                width: 50px;
+                height: 400px;
+                border-radius: 10px;
+                animation: 
+                loader 3s ease-in-out infinite;
+                animation-delay: var(--display);
+                
+
+
+
+                &:nth-child(1), &:nth-child(16) {
+                    --bg: #0e0e0e;
+                    --display: 1.6s;
+
+                }
+
+                &:nth-child(2), &:nth-child(15) {
+                    --bg: #191919;
+                    --display: 1.4s;
+
+                }
+                &:nth-child(3), &:nth-child(14) {
+                    --bg: #2d2d2d;
+                    --display: 1.2s;
+
+                }
+                &:nth-child(4), &:nth-child(13) {
+                    --bg: #434343;
+                    --display: 1s;
+
+                }
+                &:nth-child(5), &:nth-child(12) {
+                    --bg: #595959;
+                    --display: 0.8s;
+
+                }
+                &:nth-child(6), &:nth-child(11) {
+                    --bg: #656565;
+                    --display: 0.6s;
+
+                }
+                &:nth-child(7), &:nth-child(10) {
+                    --bg: #898989;
+                    --display: 0.4s;
+
+                }
+                &:nth-child(8), &:nth-child(9) {
+                    --bg: #ffffff;
+                    --display: 0.2s;
+
+                }
+
+
+            }
+        }
+    }
+
+
+}
+
+@keyframes loader {
+
+    0%,
+    100% {
+        
+        height: 2px;
+    }
+
+    50% {
+        
+        height: 400px;
+    }
+}
+
+
+
+
+
+.h03{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.p03{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.kia{
+    position: absolute;
+    width: 1000px;
+    
+}
+
+.kiaar{
+    width: 100%;
+    transform: rotate(15deg);
+}
+
+
+.take1{
+    text-decoration: none;
+    padding: 20px 100px 20px 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #9D50BB;
+    color: white;
+    font-size: 25px;
+    border: #396afc 4px solid;
+}
+
+.take1:hover{
+    color: black;
+    background-color: white;
+}
+
+.yous{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+

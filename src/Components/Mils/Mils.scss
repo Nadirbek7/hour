@@ -1,0 +1,36 @@
+.mils{
+    background: linear-gradient(120deg, #131313, #1e1e1e,  #1e1e1e, #131313,);
+    height: 200px;
+
+
+    &__morales{
+        margin: 0 auto;
+        display: flex;
+        max-width: 2200px;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+
+        &__insta{
+            display: flex;  
+            color: #fff;
+            gap: 40px;
+            width: 40%;
+            justify-content: center;
+        }
+
+        &__uslov{
+            display: flex;
+            color: #fff;
+            gap: 40px;
+            width: 42%;
+            justify-content: center;
+        }
+    }
+
+    &__linn{
+        max-width: 1650px;
+        border: 1px solid #fff;
+        margin: 0 auto;
+    }
+}

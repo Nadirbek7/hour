@@ -1,0 +1,179 @@
+.osnova{
+    background-image: url("../../assets/imgs/budu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__fon{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.504);
+    }
+    &__background{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 100vh;
+       
+
+        &__fly{
+            border: solid rgb(0, 186, 203);
+            width: 600px;
+            height: 700px;
+            border-radius: 30px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 15);
+            
+                
+
+                &__icon{
+                    
+                    height: 60px;
+                    display: flex;
+                    justify-content: end;
+    
+                    &__kub{
+                        border-top-right-radius: 30px;
+                        border-bottom-left-radius: 30px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgb(0, 93, 109);
+
+                        & > svg {
+                            color: #01eeff;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+    
+    
+    
+                &__h130{
+                    color: white;
+                    text-align: center;
+                    font-size: 50px;
+                    color: rgb(0, 234, 255);
+                    text-shadow: 0 0 10px #3ba3aa;
+                }
+
+
+                &__git{
+                    display: flex;
+                    justify-content: center;
+
+                    &__emaill{
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        
+                        &__slider{
+                            display: flex;
+                            
+                            position: relative;
+                            width: 400px;
+                            height: 100px;
+
+                            margin: 30px 0;
+
+                            &__input01{
+                                width: 400px;
+                                height: 50px;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                font-size: 1em;
+                                color: #4cd7f7;
+                                font-weight: 600;
+                                padding: 0 35px 0 5px;
+                                font-size: 20px;
+                                border-bottom: 2px solid #00c3ff;
+                            }
+                        }
+
+
+                        &__login{
+                            display: flex;
+                            justify-content: center;
+                            
+
+                            &__registration{
+                               
+                               font-size: 30px;
+                               font-weight: 700;
+                               border-radius: 15px;
+                               background-color: #7ff6ff;
+
+                               font-size: 23px;
+                                background: transparent;
+                                border: none;
+                                padding: 1em 1.5em;
+                                color: #89dbfb;
+                                text-transform: uppercase;
+                                position: relative;
+                                transition: 0.5s ease;
+                                cursor: pointer;
+                               
+                            }
+
+                            &__registration::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                height: 2px;
+                                width: 0;
+                                background-color: #58deff;
+                                transition: 0.5s ease;
+                              }
+
+
+                              &__registration:hover {
+                                color: #1e1e2b;
+                                transition-delay: 0.5s;
+                              }
+
+                              &__registration:hover::before {
+                                width: 100%;
+                              }
+
+                              &__registration::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                height: 0;
+                                width: 100%;
+                                background-color: #1de1e5;
+                                transition: 0.4s ease;
+                                z-index: -1;
+                              }
+
+                              &__registration:hover::after {
+                                height: 100%;
+                                transition-delay: 0.4s;
+                                color: aliceblue;
+                              }
+                        }
+    
+    
+
+                        
+                    }
+                }
+
+
+            
+
+        }
+    }
+}
+
+.iconn{
+    position: absolute;
+    right: 10px;
+    color: #01eeff;
+}
